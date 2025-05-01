@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${titulo}"></title>
+</head>
+<body>
+<h1>Enviar parametros a ver variables</h1>
+<ul>
+  <li>
+    <a th:href="@{/variables/String/} + 'Miguel'">LLevame a ver el texto 1</a>
+  </li>
+  <li>
+    <a th:href="@{/variables/String/} + ${nombre} + '/'+ '15'">LLevame a ver el texto 2</a>
+  </li>
+</ul>
+</body>
+</html>
